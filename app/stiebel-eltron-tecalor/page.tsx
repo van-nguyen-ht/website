@@ -398,24 +398,13 @@ export default function ProjectPage() {
                 <div className="flex flex-col lg:flex-row gap-16">
                   <div className="flex-1">
                     <h2 className={`text-2xl font-medium mb-4 ${isDark ? "text-white" : "text-[#1a2634]"}`}>
-                      The Challenge
+                      The Challenge & Solution
                     </h2>
                     <div className="space-y-4 mb-12">
                       <p
                         className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular`}
                       >
-                        First, the Stiebel Eltron brand was not optimized for digital products, making it difficult to
-                        achieve accessible contrast levels and appropriate typography. Second, integrating the new
-                        product into the existing design system while maintaining brand consistency added complexity and
-                        increased maintenance costs.
-                      </p>
-                      <p
-                        className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular mt-4`}
-                      >
-                        Although many components from the existing portfolio could be reused, the new product required
-                        seamless integration of custom components tailored to its unique needs. To ensure long-term
-                        scalability, I focused on building a sustainable design system capable of supporting future
-                        brands and evolving requirements.
+                        Overhauled a fragmented multi-brand architecture to power a global B2B digital transformation. I directed the end to end product design owning stakeholder discovery, continuous usability testing, and strict component design to modernize the digital identity across 5,000+ pages while cutting engineering time to market by 40%.
                       </p>
                     </div>
                   </div>
@@ -434,21 +423,14 @@ export default function ProjectPage() {
                 </h3>
                 <div className="space-y-4 mb-12">
                   <div className="w-full lg:w-1/2">
-                    <p
-                      className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular`}
-                    >
-                      It started with a comprehensive audit of both brands' existing digital products, identifying
-                      common patterns and unique elements. This helped understanding where components could be
-                      standardize and where brand-specific variations need mantaining.
-                    </p>
                     <ul
                       className={`${
                         isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"
                       } space-y-2 text-[16px] md:text-[14px] font-regular list-disc pl-5 mt-4`}
                     >
-                      <li>Core components that could be shared across both brands</li>
-                      <li>Brand-specific elements that needed to be maintained</li>
-                      <li>Technical requirements for implementation</li>
+                      <li>The User Research Section: Ensure you frame your testing not just as &quot;talking to users,&quot; but as stakeholder led discovery and usability testing aimed at defining the strategic product roadmap for the Tecalor platform relaunch.</li>
+                      <li>The Component Architecture Section: Explicitly state that the new design language was built as a highly structured, scalable multi-brand component framework designed to maintain 100% visual consistency and adaptability across varying digital sub-brands.</li>
+                      <li>The Engineering Handoff Section: Highlight that the component architecture was built with developer velocity in mind ensuring the design patterns directly translated to code constraints to achieve that 40% faster time to market.</li>
                     </ul>
                   </div>
 

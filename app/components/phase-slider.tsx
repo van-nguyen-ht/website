@@ -12,7 +12,7 @@ interface Phase {
 const phases: Phase[] = [
   {
     icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/build-81CEgpWJkt6iLwzGgZU1FJic3FyEiR.svg",
-    label: "Component build",
+    label: "Design for production",
     isImage: true,
   },
   {
@@ -37,7 +37,7 @@ const phases: Phase[] = [
   },
   {
     icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/prototyping-BCbwOwXKJ3PF5fVXUjG0dJyC4C9spv.svg",
-    label: "Rapid prototyping",
+    label: "AI Readiness",
     isImage: true,
   },
 ]
@@ -46,7 +46,7 @@ const phases: Phase[] = [
 export const stiebelPhases: Phase[] = [
   {
     icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/build-81CEgpWJkt6iLwzGgZU1FJic3FyEiR.svg",
-    label: "Component build",
+    label: "Design for production",
     isImage: true,
   },
   {
