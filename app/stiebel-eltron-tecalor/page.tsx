@@ -433,15 +433,6 @@ export default function ProjectPage() {
                     >
                       Conversion: Modernized the end-to-end digital experience, driving measurable increases in global B2B conversions.
                     </p>
-                    <ul
-                      className={`${
-                        isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"
-                      } space-y-2 text-[16px] md:text-[14px] font-regular list-disc pl-5 mt-4`}
-                    >
-                      <li>The User Research Section: Ensure you frame your testing not just as &quot;talking to users,&quot; but as stakeholder led discovery and usability testing aimed at defining the strategic product roadmap for the Tecalor platform relaunch.</li>
-                      <li>The Component Architecture Section: Explicitly state that the new design language was built as a highly structured, scalable multi-brand component framework designed to maintain 100% visual consistency and adaptability across varying digital sub-brands.</li>
-                      <li>The Engineering Handoff Section: Highlight that the component architecture was built with developer velocity in mind ensuring the design patterns directly translated to code constraints to achieve that 40% faster time to market.</li>
-                    </ul>
                   </div>
 
                   <div className="mt-8">
