@@ -131,7 +131,7 @@ const sideProjects = [
   {
     title: "Tecalor",
     category:
-      "Collaborated on a strategic brand refresh to support a product relaunch. Worked across teams to align visual identity and design language, helping modernize the brand for digital platforms while maintaining consistency and adaptability.",
+      "Collaborated on a strategic brand refresh and multi-brand architecture to support the Tecalor product relaunch, modernizing the digital identity across 5,000+ pages while cutting time-to-market by 40%.",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SteTec-project-teaser-cover.jpg-ZVjdCn186WoWz3rdvkm6CdWj2bOuVq.png",
     slug: "tecalor",
@@ -338,20 +338,13 @@ export default function Page() {
                     className="rounded-full object-cover"
                     priority
                   />
-                </div>
-              </div>
+            
 
               <div className="space-y-4">
                 <p
                   className={`text-sm font-normal leading-[150%] tracking-[0.04em] ${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"}`}
                 >
-                  I’m specialising in user experience and design systems for complex B2B products.
-
-                </p>
-                <p
-                  className={`text-sm font-normal leading-[150%] tracking-[0.04em] ${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"}`}
-                >
-                  For me, the core of great design is not the solution but the problem behind it. I focus on uncovering real user and business challenges, and translating them into clear, usable, and scalable product experiences.
+                  Product designer with a track record of building award-winning of architecting, scaling, managing enterprise design systems for multi-brand ecosystems. Deeply committed to ingraining brand&apos;s core identity and philosophy directly into the user experience, ensuring that complex multi-brand digital ecosystems maintain high emotional resonance alongside functional excellence.
                 </p>
                 <div className="inline-flex items-center gap-2 px-4 h-9 mt-6 mb-6 rounded-full shadow-[0_1px_1px_rgba(0,0,0,0.1)] bg-[#2E2E48] -ml-1">
                   <span className="w-2 h-2 rounded-full bg-green-400 badge-glow"></span>
@@ -420,7 +413,7 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-6 lg:gap-12 mb-32">
               <ProjectTeaserBig
                 title="Union Investment"
-                category="Built the Solid Design System to support 55 product teams by improving cross-functional workflows, fostering alignment, and creating a sustainable foundation for all digital products."
+                category="Built the enterprise design system from scratch to support 20+ product teams by optimizing complex financial workflows and reducing maintenance costs by 42%."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Solid-design-system-cover.jpg-KIK7kePoViN8LWxvHe7fFlFXwbMMnY.jpeg"
                 isDark={isDark}
                 slug="solid-design-system"
@@ -428,7 +421,7 @@ export default function Page() {
               />
               <StiebelTeaser
                 title="Stiebel Eltron x Tecalor"
-                category="Unifying brands through design: Developed a multibrand design system that modernized existing product interfaces while aligning them with a new e-commerce vision. Enabled consistent experiences across brands and accelerated digital transformation efforts."
+                category="Overhauled the global B2B multi-brand architecture to power an e-commerce transformation across 5,000+ digital pages, cutting time-to-market by 40%."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/project-teaser-image-02-cFPeN8zv9cV2fw4RTHdqQOL4kkM3VG.png?height=960&width=1200"
                 isDark={isDark}
                 slug="stiebel-eltron-tecalor"
