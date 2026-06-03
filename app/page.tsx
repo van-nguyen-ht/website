@@ -338,7 +338,8 @@ export default function Page() {
                     className="rounded-full object-cover"
                     priority
                   />
-            
+                </div>
+              </div>
 
               <div className="space-y-4">
                 <p
