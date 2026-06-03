@@ -241,16 +241,6 @@ export default function ProjectPage() {
                     <p
                       className={`text-3xl md:text-6xl font-light font-mono ${isDark ? "text-white" : "text-[#1a2634]"}`}
                     >
-                      €968K
-                    </p>
-                    <p className={`text-[14px] mt-2 font-sans ${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"}`}>
-                      in annual savings
-                    </p>
-                  </div>
-                  <div className="w-[150px]">
-                    <p
-                      className={`text-3xl md:text-6xl font-light font-mono ${isDark ? "text-white" : "text-[#1a2634]"}`}
-                    >
                       18%
                     </p>
                     <p className={`text-[14px] mt-2 font-sans ${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"}`}>
