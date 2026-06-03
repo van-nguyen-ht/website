@@ -1,0 +1,405 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+  html {
+    font-size: 14px;
+  }
+  .headline-3 {
+    @apply text-2xl font-normal leading-normal tracking-normal;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Font face declarations */
+@font-face {
+  font-family: "Studio Feixen Sans";
+  src: url("/fonts/StudioFeixenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Studio Feixen Sans";
+  src: url("/fonts/StudioFeixenSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Studio Feixen Sans";
+  src: url("/fonts/StudioFeixenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Studio Feixen Mono";
+  src: url("/fonts/StudioFeixenMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom font declarations for Neue Montreal and Frutiger Neue UI */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/fonts/NeueMontreal-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Frutiger Neue UI";
+  src: url("/fonts/FrutigerNeuefuerUI-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Frutiger Neue UI";
+  src: url("/fonts/FrutigerNeuefuerUI-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Roboto font declarations */
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Add font utility classes */
+.neue-montreal-font {
+  font-family: "Neue Montreal", "Studio Feixen Sans", sans-serif;
+}
+
+.frutiger-neue-font {
+  font-family: "Frutiger Neue UI", "Studio Feixen Sans", sans-serif;
+}
+
+/* Add Roboto utility class */
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom utility classes */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition-property: opacity, transform;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Badge glow animation */
+.badge-glow {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #4ade80, 0 0 10px #4ade80, 0 0 15px #4ade80;
+  }
+  to {
+    box-shadow: 0 0 10px #4ade80, 0 0 20px #4ade80, 0 0 30px #4ade80;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 10s linear infinite;
+}
+
+.cursor-hidden {
+  cursor: none;
+}
+
+.hover-ring-visible {
+  opacity: 1 !important;
+}
+
+/* Custom font class for SD-Teaser component */
+.custom-font {
+  font-family: "Frutiger Neue UI", "Studio Feixen Sans", sans-serif;
+}
+
+/* ------------- FOCUS STYLES ------------- */
+
+/* Default focus styles */
+*:focus {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+}
+
+/* Custom focus styles for all focusable elements */
+*:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+  z-index: 100 !important;
+}
+
+/* Remove focus ring for booker form elements */
+.booker-form button:focus,
+.booker-form button:focus-visible,
+.booker-form input:focus,
+.booker-form input:focus-visible,
+.booker-form select:focus,
+.booker-form select:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Force tabindex elements to have proper focus styles */
+[tabindex]:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+  z-index: 200 !important;
+}
+
+/* Ensure LinkedIn icon is properly focusable */
+a[aria-label="LinkedIn Profile"]:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+  border-radius: 9999px !important;
+}
+
+/* Tab order in header */
+header nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ensure focus rings appear for navigation elements */
+header button:focus-visible,
+header a:focus-visible,
+a[aria-label="LinkedIn Profile"]:focus-visible,
+button[aria-label="Accessibility options"]:focus-visible,
+button[aria-label$="mode"]:focus-visible,
+a[aria-label="Back to home"]:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+  z-index: 1000 !important;
+}
+
+/* Back to top button focus style */
+.back-to-top-button:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+}
+
+/* Update the project teaser focus styles to remove border-radius */
+
+/* Project teaser focus styles */
+.project-teaser-image-container:focus-visible,
+a:has(.project-teaser-image-container):focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+}
+
+/* Ensure hidden buttons stay hidden */
+.hidden-button,
+.btn-hidden,
+button[hidden],
+button.hidden,
+button.invisible,
+button.opacity-0:not([aria-label="Back to top"]) {
+  display: none !important;
+}
+
+/* Remove focus rings from pagination dots and navigation buttons */
+button[aria-label^="Go to project"]:focus,
+button[aria-label^="Go to project"]:focus-visible,
+button[aria-label="Previous project"]:focus,
+button[aria-label="Previous project"]:focus-visible,
+button[aria-label="Next project"]:focus,
+button[aria-label="Next project"]:focus-visible {
+  outline: none !important;
+}
+
+/* Force LinkedIn to be first in tab order */
+a[aria-label="LinkedIn Profile"] {
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+/* Make LinkedIn focus ring more visible */
+a[aria-label="LinkedIn Profile"]:focus-visible {
+  outline: 3px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 0 0 2px rgba(251, 207, 203, 0.5) !important;
+}
+
+/* Ensure the LinkedIn link is the first element in the DOM order */
+header nav {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+/* Force LinkedIn to be first in the DOM */
+header nav a[aria-label="LinkedIn Profile"] {
+  order: -999 !important;
+}
+
+/* Ensure the LinkedIn link is visible and clickable */
+header nav a[aria-label="LinkedIn Profile"] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* IMPORTANT: Remove any rules that might be hiding focus styles */
+header.fixed button:focus,
+header.fixed a:focus,
+header[class*="bottom"] button:focus,
+header[class*="bottom"] a:focus,
+header.fixed button:focus-visible,
+header.fixed a:focus-visible,
+header[class*="bottom"] button:focus-visible,
+header[class*="bottom"] a:focus-visible {
+  outline: 2px solid #fbcfcb !important;
+  outline-offset: 4px !important;
+}
+
+/* Add this CSS rule to remove focus ring specifically for the "Van Nguyen" link in the header */
+header a[href="/"]:focus-visible,
+header a[href="/"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Also add this to ensure it works when the header is in the scrolled state */
+header.fixed a[href="/"]:focus-visible,
+header.fixed a[href="/"]:focus,
+header[class*="bottom"] a[href="/"]:focus-visible,
+header[class*="bottom"] a[href="/"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Add this CSS rule to remove focus ring specifically for the SD-Teaser button */
+.sd-teaser-button:focus,
+.sd-teaser-button:focus-visible,
+a[href^="#"]:has(+ .frutiger-neue-font):focus,
+a[href^="#"]:has(+ .frutiger-neue-font):focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
