@@ -415,14 +415,24 @@ export default function ProjectPage() {
 
             <AnimateIn animation="fade-up" duration="normal" delay={300}>
               <div className="max-w-[720] space-y-4">
-                <h2 className={`text-2xl font-medium mb-4 ${isDark ? "text-white" : "text-[#1a2634]"}`}>The Process</h2>
-                <h3
-                  className={`text-base md:text-base text-[16px] font-medium mb-4 ${isDark ? "text-white" : "text-[#1a2634]"}`}
-                >
-                  Audit
-                </h3>
+                <h2 className={`text-2xl font-medium mb-4 ${isDark ? "text-white" : "text-[#1a2634]"}`}>The Metrics</h2>
                 <div className="space-y-4 mb-12">
                   <div className="w-full lg:w-1/2">
+                    <p
+                      className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular`}
+                    >
+                      Scale: Successfully deployed a unified framework across 5,000+ digital pages for 54,000+ global partners.
+                    </p>
+                    <p
+                      className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular mt-4`}
+                    >
+                      Velocity: Reduced development friction to deliver a 40% faster time-to-market for cross-functional teams.
+                    </p>
+                    <p
+                      className={`${isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"} text-[16px] md:text-[14px] font-regular mt-4`}
+                    >
+                      Conversion: Modernized the end-to-end digital experience, driving measurable increases in global B2B conversions.
+                    </p>
                     <ul
                       className={`${
                         isDark ? "text-[#cbd5e0]" : "text-[#2d403b]"
